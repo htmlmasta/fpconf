@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500px" height="500px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 144 144"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil1 {fill:black}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="0,0 144,0 144,144 0,144 "/>
+  <g id="_820727104">
+   <g>
+    <path class="fil1" d="M119 123l-109 0c-5,0 -10,-4 -10,-10l0 -82c0,-6 5,-11 10,-11l109 0c6,0 10,5 10,11l0 82c0,6 -4,10 -10,10zm-109 -98c-3,0 -6,2 -6,6l0 82c0,3 3,6 6,6l109 0c3,0 6,-3 6,-6l0 -82c0,-4 -3,-6 -6,-6l-109 0z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M42 78c-9,0 -16,-9 -16,-19 0,-11 7,-19 16,-19 9,0 16,8 16,19 0,10 -7,19 -16,19zm0 -34c-7,0 -12,6 -12,15 0,8 5,14 12,14 7,0 12,-6 12,-14 0,-9 -5,-15 -12,-15z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M64 105l-44 0c-4,0 -8,-3 -8,-7l0 -6c0,-2 2,-5 4,-6l23 -12c2,-1 4,-1 7,0l22 12c2,1 4,4 4,6l0 6c0,4 -3,7 -8,7zm-22 -27c0,0 -1,0 -1,0l-23 11c-1,1 -2,2 -2,3l0 6c0,1 2,3 4,3l44 0c2,0 4,-2 4,-3l0 -6c0,-1 -1,-2 -2,-3l-22 -11c-1,0 -1,0 -2,0z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M116 43l-34 0c-1,0 -2,-1 -2,-2 0,-1 1,-2 2,-2l34 0c1,0 2,1 2,2 0,1 -1,2 -2,2z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M116 58l-34 0c-1,0 -2,-1 -2,-2 0,-1 1,-2 2,-2l34 0c1,0 2,1 2,2 0,1 -1,2 -2,2z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M116 73l-34 0c-1,0 -2,-1 -2,-2 0,-1 1,-2 2,-2l34 0c1,0 2,1 2,2 0,1 -1,2 -2,2z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M116 88l-34 0c-1,0 -2,-1 -2,-2 0,-1 1,-2 2,-2l34 0c1,0 2,1 2,2 0,1 -1,2 -2,2z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M116 105l-34 0c-1,0 -2,-1 -2,-2 0,-1 1,-2 2,-2l34 0c1,0 2,1 2,2 0,1 -1,2 -2,2z"/>
+   </g>
+  </g>
+ </g>
+</svg>
