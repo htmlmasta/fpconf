@@ -395,7 +395,8 @@ body {
       float: left;
       white-space: nowrap; }
   .map-section .map {
-    height: 600px; }
+    height: 600px;
+    border-top: 1px solid #ccc; }
 
 .footer {
   background: #000;
