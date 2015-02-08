@@ -46,13 +46,21 @@ body {
 	.logo {
 		width: 35%;
 		height: 50%;
-		overflow: hidden;
 		text-indent: -999px;
 		position: absolute;
 		left: -1%;
 		top: 0;
 		background: url(../images/logo.svg) 0 100% no-repeat;
 		background-size: contain;
+		.when {
+			position: absolute;
+			bottom: -.4em;
+			left: 0;
+			color: #fff;
+			font: italic 260% $font-garamond;
+			text-indent: .4em;
+			width: 200%;
+		}
 	}
 }
 .nav {

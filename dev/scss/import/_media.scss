@@ -2,6 +2,13 @@
 	.nav-item {
 		margin-left: 0;
 	}
+	.header {
+		.logo {
+			.when {
+				font-size: 230%;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 670px) {
@@ -46,6 +53,10 @@
 			width: 50%;
 			height: 50%;
 			top: 10%;
+			.when {
+				bottom: 0;
+				font-size: 130%;
+			}
 		}
 		.frame .buy-a-ticket {
 			font-size: 18px;

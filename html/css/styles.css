@@ -39,13 +39,20 @@ body {
   .header .logo {
     width: 35%;
     height: 50%;
-    overflow: hidden;
     text-indent: -999px;
     position: absolute;
     left: -1%;
     top: 0;
     background: url(../images/logo.svg) 0 100% no-repeat;
     background-size: contain; }
+    .header .logo .when {
+      position: absolute;
+      bottom: -.4em;
+      left: 0;
+      color: #fff;
+      font: italic 260% 'garamond-premier-pro', serif;
+      text-indent: .4em;
+      width: 200%; }
 
 .nav {
   position: fixed;
@@ -423,7 +430,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .nav-item {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .header .logo .when {
+    font-size: 230%; } }
 
 @media screen and (max-width: 670px) {
   body {
@@ -457,6 +466,9 @@ body {
       width: 50%;
       height: 50%;
       top: 10%; }
+      .header .logo .when {
+        bottom: 0;
+        font-size: 130%; }
     .header .frame .buy-a-ticket {
       font-size: 18px;
       width: 50%;
