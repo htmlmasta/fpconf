@@ -45,7 +45,7 @@ body {
 	}
 	.logo {
 		width: 35%;
-		height: 50%;
+		height: 60%;
 		text-indent: -999px;
 		position: absolute;
 		left: -1%;
@@ -60,6 +60,20 @@ body {
 			font: italic 260% $font-garamond;
 			text-indent: .4em;
 			width: 200%;
+		}
+	}
+	.tip {
+		position: absolute;
+		left: 0;
+		top: 5%;
+		font-size: 24px;
+		a {
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 1px dashed #fff;
+		}
+		a:hover {
+			text-shadow: 0 0 1px #fff;
 		}
 	}
 }
@@ -171,7 +185,7 @@ body {
 			height: 69px;
 			width: 69px;
 			background: url(../images/social.svg);
-			background-size: 210px 140px;
+			background-size: 280px 140px;
 		}
 		&.icon-twitter {
 			&::before {
@@ -197,6 +211,14 @@ body {
 				background-position: -140px -70px;
 			}
 		}
+		&.icon-meetup {
+			&::before {
+				background-position: -210px 0;
+			}
+			&:hover::before {
+				background-position: -210px -70px;
+			}
+		}
 	}
 }
 
@@ -208,7 +230,7 @@ body {
 		position: relative;
 		padding: 90px $side-margin 25px;
 	}
-	&:nth-child(even) {
+	&.decorated {
 		background: url(../images/bg.svg);
 		z-index: 3;
 		border-top: 50px solid #fff;
@@ -219,6 +241,13 @@ body {
 			background: #fff;
 			border: 5px solid #000;
 			padding: 40px;
+		}
+	}
+	&.stripe {
+		margin-top: 5px;
+		z-index: 5;
+		.wrapper {
+			padding: 25px $side-margin;
 		}
 	}
 	.content {
@@ -251,6 +280,22 @@ body {
 			text-shadow: 0 0 0 #000, 0 0 0 #000;
 		}
 	}
+}
+
+.subscribe-text {
+	font-size: 30px;
+	line-height: 1.2;
+	float: left;
+	width: 52%;
+}
+.subscribe-link {
+	color: #fff;
+	float: right;
+	font-size: 20px;
+	background: #000;
+	text-transform: uppercase;
+	padding: 25px 20px;
+	text-align: center;
 }
 
 .speakers {

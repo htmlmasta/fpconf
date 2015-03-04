@@ -15,6 +15,12 @@
           .logo
             FPCONF
             .when Москва, апрель 2015
+          .tip
+            Конференция проходит в рамках фестиваля
+            %br
+            «
+            %a{href: '#'}> Российские интернет технологии
+            » 2015
           %a.buy-a-ticket(href="#") Купить билет
       %nav.nav
         .wrapper
@@ -49,7 +55,11 @@
         .social
           %a.social-link.icon.icon-twitter(href="#") FPCONF в Twitter
           %a.social-link.icon.icon-facebook(href="#") FPCONF на Facebook
-          %a.social-link.icon.icon-googleplus(href="#") FPCONF в Google+
+          %a.social-link.icon.icon-meetup(href="#") FPCONF на MeetUp
+    %section#subscribe.content-section.decorated.stripe
+      .wrapper
+        .subscribe-text Хочешь получать новости конференции и митапов - подпишись на рассылку
+        %a.subscribe-link{href: '#'} Хочу подписаться на&nbsp;рассылку
     %section#speakers.content-section
       .wrapper
         %h2.section-title Спикеры
@@ -93,7 +103,7 @@
           .speakers-dummy
           .speakers-dummy
           .speakers-dummy
-    %section#program.content-section
+    %section#program.content-section.decorated
       .wrapper
         %h2.section-title Программа
         .content

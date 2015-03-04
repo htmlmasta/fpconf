@@ -38,7 +38,7 @@ body {
       background-image: url(../images/bg2.svg); }
   .header .logo {
     width: 35%;
-    height: 50%;
+    height: 60%;
     text-indent: -999px;
     position: absolute;
     left: -1%;
@@ -53,6 +53,17 @@ body {
       font: italic 260% 'garamond-premier-pro', serif;
       text-indent: .4em;
       width: 200%; }
+  .header .tip {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    font-size: 24px; }
+    .header .tip a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px dashed #fff; }
+    .header .tip a:hover {
+      text-shadow: 0 0 1px #fff; }
 
 .nav {
   position: fixed;
@@ -146,7 +157,7 @@ body {
       height: 69px;
       width: 69px;
       background: url(../images/social.svg);
-      background-size: 210px 140px; }
+      background-size: 280px 140px; }
     .social-link.icon-twitter::before {
       background-position: 0 0; }
     .social-link.icon-twitter:hover::before {
@@ -159,6 +170,10 @@ body {
       background-position: -140px 0; }
     .social-link.icon-facebook:hover::before {
       background-position: -140px -70px; }
+    .social-link.icon-meetup::before {
+      background-position: -210px 0; }
+    .social-link.icon-meetup:hover::before {
+      background-position: -210px -70px; }
 
 .content-section {
   margin-top: -50px;
@@ -167,16 +182,21 @@ body {
   .content-section .wrapper {
     position: relative;
     padding: 90px 35px 25px; }
-  .content-section:nth-child(even) {
+  .content-section.decorated {
     background: url(../images/bg.svg);
     z-index: 3;
     border-top: 50px solid #fff; }
-    .content-section:nth-child(even) .wrapper {
+    .content-section.decorated .wrapper {
       padding-top: 40px; }
-    .content-section:nth-child(even) .content {
+    .content-section.decorated .content {
       background: #fff;
       border: 5px solid #000;
       padding: 40px; }
+  .content-section.stripe {
+    margin-top: 5px;
+    z-index: 5; }
+    .content-section.stripe .wrapper {
+      padding: 25px 35px; }
   .content-section .content {
     clear: both; }
 
@@ -206,6 +226,21 @@ body {
     text-transform: uppercase; }
     .section-action-link:hover {
       text-shadow: 0 0 0 #000, 0 0 0 #000; }
+
+.subscribe-text {
+  font-size: 30px;
+  line-height: 1.2;
+  float: left;
+  width: 52%; }
+
+.subscribe-link {
+  color: #fff;
+  float: right;
+  font-size: 20px;
+  background: #000;
+  text-transform: uppercase;
+  padding: 25px 20px;
+  text-align: center; }
 
 .speakers {
   display: -webkit-flex;
@@ -469,7 +504,8 @@ body {
           background: #fff;
           color: #000; }
   .header {
-    padding-top: 0; }
+    padding-top: 0;
+    margin-bottom: 45px; }
     .header .logo {
       width: 50%;
       height: 50%;
@@ -477,6 +513,8 @@ body {
       .header .logo .when {
         bottom: 0;
         font-size: 130%; }
+    .header .wrapper {
+      overflow: visible; }
     .header .frame .buy-a-ticket {
       font-size: 18px;
       width: 50%;
@@ -484,6 +522,16 @@ body {
       padding: 1% 0;
       text-align: center;
       border-width: 1px; }
+    .header .frame .tip {
+      color: #000;
+      top: 110%;
+      font-size: 16px; }
+      .header .frame .tip a {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px dashed #000; }
+      .header .frame .tip a:hover {
+        text-shadow: 0 0 1px #000; }
   .about {
     padding: 30px 0 20px;
     margin-top: 0; }
@@ -507,8 +555,12 @@ body {
     margin-top: 0; }
     .content-section .wrapper {
       padding: 25px 3%; }
-    .content-section:nth-child(even) .content {
+    .content-section.decorated .content {
       padding: 5%; }
+    .content-section.stripe {
+      margin: -25px 0 15px; }
+      .content-section.stripe .wrapper {
+        padding: 15px 3%; }
   .section-title {
     font-size: 40px;
     float: none;
@@ -568,6 +620,16 @@ body {
     .sponsors-link img {
       width: 100%;
       display: block; }
+  .subscribe-text {
+    font-size: 20px;
+    float: none;
+    width: auto;
+    margin: 0 0 15px; }
+  .subscribe-link {
+    float: none;
+    display: block;
+    font-size: 15px;
+    padding: 15px 20px; }
   .footer {
     padding: 10px 0;
     line-height: 1.4; }

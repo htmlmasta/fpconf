@@ -52,6 +52,7 @@
 	}
 	.header {
 		padding-top: 0;
+		margin-bottom: 45px;
 		.logo {
 			width: 50%;
 			height: 50%;
@@ -61,13 +62,31 @@
 				font-size: 130%;
 			}
 		}
-		.frame .buy-a-ticket {
-			font-size: 18px;
-			width: 50%;
-			box-sizing: border-box;
-			padding: 1% 0;
-			text-align: center;
-			border-width: 1px;
+		.wrapper {
+			overflow: visible;
+		}
+		.frame {
+			.buy-a-ticket {
+				font-size: 18px;
+				width: 50%;
+				box-sizing: border-box;
+				padding: 1% 0;
+				text-align: center;
+				border-width: 1px;
+			}
+			.tip {
+				color: #000;
+				top: 110%;
+				font-size: 16px;
+				a {
+					color: #000;
+					text-decoration: none;
+					border-bottom: 1px dashed #000;
+				}
+				a:hover {
+					text-shadow: 0 0 1px #000;
+				}
+			}
 		}
 	}
 	.about {
@@ -99,9 +118,15 @@
 		.wrapper {
 			padding: 25px $side-margin-mobile;
 		}
-		&:nth-child(even) {
+		&.decorated {
 			.content {
 				padding: 5%;
+			}
+		}
+		&.stripe {
+			margin: -25px 0 15px;
+			.wrapper {
+				padding: 15px $side-margin-mobile;
 			}
 		}
 	}
@@ -190,6 +215,19 @@
 				display: block;
 			}
 		}
+	}
+
+	.subscribe-text {
+		font-size: 20px;
+		float: none;
+		width: auto;
+		margin: 0 0 15px;
+	}
+	.subscribe-link {
+		float: none;
+		display: block;
+		font-size: 15px;
+		padding: 15px 20px;
 	}
 
 	.footer {
