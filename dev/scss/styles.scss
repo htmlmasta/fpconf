@@ -229,6 +229,10 @@ body {
 	.wrapper {
 		position: relative;
 		padding: 90px $side-margin 25px;
+		.simple-page & {
+			background: url(../images/logo.svg) 108% 12px no-repeat;
+			background-size: 500px;
+		}
 	}
 	&.decorated {
 		background: url(../images/bg.svg);
@@ -252,6 +256,36 @@ body {
 	}
 	.content {
 		clear: both;
+		.simple-page & {
+			padding: 35px 150px;
+		}
+	}
+}
+.content-header {
+	text-transform: uppercase;
+	margin: 35px 0 25px;
+	&:first-child {
+		margin-top: 0;
+	}
+	&-underline {
+		border-bottom: 1px dotted #444;
+	}
+}
+.content-list {
+	counter-reset: item;
+	margin: 0 0 25px;
+	padding: 0;
+	list-style: none;
+	line-height: 1.4;
+	& li {
+		margin: 0 0 10px;
+		&::before {
+			content: counter(item) '. ';
+			counter-increment: item;
+			font-weight: bold;
+			text-shadow: 1px 0 0 #000;
+			font-size: 17px;
+		}
 	}
 }
 .section-title {

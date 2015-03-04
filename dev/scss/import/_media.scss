@@ -230,6 +230,20 @@
 		padding: 15px 20px;
 	}
 
+	.simple-page {
+		.header {
+			margin-bottom: 0;
+		}
+		.content-section.decorated {
+			border-top: 0;
+			.wrapper {
+				padding-top: 70px;
+				background-size: 300px;
+				background-position: 5% 5px;
+			}
+		}
+	}
+
 	.footer {
 		padding: 10px 0;
 		line-height: 1.4;
