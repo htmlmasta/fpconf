@@ -40,7 +40,7 @@ body {
 			background: #000;
 		}
 		.buy-a-ticket:hover {
-			background-image: url(../images/bg2.png);
+			background-image: url(../images/bg2.svg);
 		}
 	}
 	.logo {
@@ -110,7 +110,7 @@ body {
 			color: #000;
 			text-decoration: none;
 			&:hover {
-				background: url(../images/bg.png);
+				background: url(../images/bg.svg);
 			}
 			&.active {
 				&,
@@ -159,7 +159,7 @@ body {
 		height: 69px;
 		overflow: hidden;
 		text-indent: -999px;
-		background: url(../images/bg.png);
+		background: url(../images/bg.svg);
 		&:hover {
 			background: #000;
 		}
@@ -209,7 +209,7 @@ body {
 		padding: 90px $side-margin 25px;
 	}
 	&:nth-child(even) {
-		background: url(../images/bg.png);
+		background: url(../images/bg.svg);
 		z-index: 3;
 		border-top: 50px solid #fff;
 		.wrapper {
@@ -263,7 +263,7 @@ body {
 		margin: 25px 15px 0;
 	}
 	&-image {
-		background: url(../images/bg.png);
+		background: url(../images/bg.svg);
 		width: $speaker-base-width;
 		height: $speaker-base-width;
 		display: flex;
@@ -301,7 +301,7 @@ body {
 		float: left;
 		clear: left;
 		margin: 0 0 35px;
-		background: url(../images/bg.png);
+		background: url(../images/bg.svg);
 		padding: 7px 0;
 		text-align: center;
 		width: 130px;
@@ -438,11 +438,12 @@ body {
 .map-section {
 	position: relative;
 	z-index: 1;
+	height: 600px;
 	margin-top: -50px;
 	border-top: 50px solid #fff;
 	.wrapper {
-		margin-top: 40px;
-		position: absolute;
+		margin-top: 0;
+		padding-top: 40px;
 		z-index: 5;
 	}
 	dl {
@@ -470,6 +471,11 @@ body {
 	}
 	.map {
 		height: 600px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
 		border-top: 1px solid #ccc;
 	}
 }

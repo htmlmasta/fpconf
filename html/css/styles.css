@@ -9,7 +9,7 @@ body {
   max-width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 3%;
+  padding: 0 35px;
   overflow: hidden; }
 
 .header {
@@ -35,7 +35,7 @@ body {
       color: #fff;
       background: #000; }
     .header .frame .buy-a-ticket:hover {
-      background-image: url(../images/bg2.png); }
+      background-image: url(../images/bg2.svg); }
   .header .logo {
     width: 35%;
     height: 50%;
@@ -65,14 +65,14 @@ body {
   text-transform: uppercase;
   font-size: 16px; }
   .nav .wrapper {
-    padding: 13px 3%; }
+    padding: 13px 35px; }
   .nav-list {
     margin: 0 0 0 -5px;
     padding: 0;
     list-style: none; }
   .nav-item {
     display: inline-block;
-    margin-left: 3%; }
+    margin-left: 35px; }
     .nav-item:first-child {
       margin-left: 0; }
   .nav-link {
@@ -94,7 +94,7 @@ body {
       color: #000;
       text-decoration: none; }
       .nav-lang-link:hover {
-        background: url(../images/bg.png); }
+        background: url(../images/bg.svg); }
       .nav-lang-link.active, .nav-lang-link.active:hover {
         background: #000;
         color: #fff;
@@ -135,7 +135,7 @@ body {
     height: 69px;
     overflow: hidden;
     text-indent: -999px;
-    background: url(../images/bg.png); }
+    background: url(../images/bg.svg); }
     .social-link:hover {
       background: #000; }
     .social-link::before {
@@ -166,9 +166,9 @@ body {
   z-index: 4; }
   .content-section .wrapper {
     position: relative;
-    padding: 90px 3% 25px; }
+    padding: 90px 35px 25px; }
   .content-section:nth-child(even) {
-    background: url(../images/bg.png);
+    background: url(../images/bg.svg);
     z-index: 3;
     border-top: 50px solid #fff; }
     .content-section:nth-child(even) .wrapper {
@@ -222,7 +222,7 @@ body {
     width: 255px;
     margin: 25px 15px 0; }
   .speakers-image {
-    background: url(../images/bg.png);
+    background: url(../images/bg.svg);
     width: 255px;
     height: 255px;
     display: -webkit-flex;
@@ -255,7 +255,7 @@ body {
     float: left;
     clear: left;
     margin: 0 0 35px;
-    background: url(../images/bg.png);
+    background: url(../images/bg.svg);
     padding: 7px 0;
     text-align: center;
     width: 130px;
@@ -376,11 +376,12 @@ body {
 .map-section {
   position: relative;
   z-index: 1;
+  height: 600px;
   margin-top: -50px;
   border-top: 50px solid #fff; }
   .map-section .wrapper {
-    margin-top: 40px;
-    position: absolute;
+    margin-top: 0;
+    padding-top: 40px;
     z-index: 5; }
   .map-section dl {
     background: #fff;
@@ -403,6 +404,11 @@ body {
       white-space: nowrap; }
   .map-section .map {
     height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     border-top: 1px solid #ccc; }
 
 .footer {
@@ -437,6 +443,8 @@ body {
 @media screen and (max-width: 670px) {
   body {
     font-size: 16px; }
+  .wrapper {
+    padding: 0 3%; }
   .nav {
     height: 49px;
     top: -54px;
@@ -483,6 +491,8 @@ body {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column; }
+    .about .content {
+      padding-right: 0; }
     .about h1 {
       font-size: 30px;
       margin: 0 0 15px; }
@@ -496,7 +506,7 @@ body {
   .content-section {
     margin-top: 0; }
     .content-section .wrapper {
-      padding-top: 25px; }
+      padding: 25px 3%; }
     .content-section:nth-child(even) .content {
       padding: 5%; }
   .section-title {
