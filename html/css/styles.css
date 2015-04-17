@@ -38,7 +38,7 @@ body {
       background-image: url(../images/bg2.svg); }
   .header .logo {
     width: 35%;
-    height: 60%;
+    height: 47%;
     text-indent: -999px;
     position: absolute;
     left: -1%;
@@ -48,7 +48,7 @@ body {
     .header .logo .when {
       position: absolute;
       bottom: -.4em;
-      left: 0;
+      left: -.2em;
       color: #fff;
       font: italic 260% 'garamond-premier-pro', serif;
       text-indent: .4em;
@@ -56,8 +56,9 @@ body {
   .header .tip {
     position: absolute;
     left: 0;
-    top: 5%;
-    font-size: 24px; }
+    top: 52%;
+    font-size: 16px;
+    line-height: 1.4; }
     .header .tip a {
       color: #fff;
       text-decoration: none;
@@ -200,6 +201,32 @@ body {
     z-index: 5; }
     .content-section.stripe .wrapper {
       padding: 25px 35px; }
+  .content-section h3.day-header {
+    position: relative;
+    max-width: 760px;
+    margin: 45px auto;
+    overflow: hidden;
+    font: 100 70px 'proxima-nova', sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+    .content-section h3.day-header:first-child {
+      margin-top: 0; }
+    .content-section h3.day-header::before, .content-section h3.day-header::after {
+      content: '';
+      height: 4px;
+      background: url(../images/dot.svg);
+      background-size: 8px 4px;
+      position: absolute;
+      width: 128px;
+      left: 0;
+      top: 38px; }
+    .content-section h3.day-header::after {
+      left: auto;
+      right: -4px; }
+    .content-section h3.day-header + p {
+      text-align: center;
+      font: 100 30px 'proxima-nova', sans-serif;
+      margin: -45px 0 45px; }
   .content-section .content {
     clear: both; }
     .simple-page .content-section .content {
@@ -346,6 +373,7 @@ body {
   padding-top: 7px; }
   .report-title {
     font-size: 20px;
+    line-height: 1.4;
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
@@ -543,23 +571,25 @@ body {
         font-size: 130%; }
     .header .wrapper {
       overflow: visible; }
-    .header .frame .buy-a-ticket {
-      font-size: 18px;
-      width: 50%;
-      box-sizing: border-box;
-      padding: 1% 0;
-      text-align: center;
-      border-width: 1px; }
-    .header .frame .tip {
-      color: #000;
-      top: 110%;
-      font-size: 16px; }
-      .header .frame .tip a {
+    .header .frame {
+      background-position: 110% 2px; }
+      .header .frame .buy-a-ticket {
+        font-size: 18px;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 1% 0;
+        text-align: center;
+        border-width: 1px; }
+      .header .frame .tip {
         color: #000;
-        text-decoration: none;
-        border-bottom: 1px dashed #000; }
-      .header .frame .tip a:hover {
-        text-shadow: 0 0 1px #000; }
+        top: 110%;
+        font-size: 16px; }
+        .header .frame .tip a {
+          color: #000;
+          text-decoration: none;
+          border-bottom: 1px dashed #000; }
+        .header .frame .tip a:hover {
+          text-shadow: 0 0 1px #000; }
   .about {
     padding: 30px 0 20px;
     margin-top: 0; }
@@ -589,6 +619,18 @@ body {
       margin: -25px 0 15px; }
       .content-section.stripe .wrapper {
         padding: 15px 3%; }
+    .content-section h3.day-header {
+      margin: 25px auto;
+      font: 400 35px 'proxima-nova', sans-serif;
+      text-align: left; }
+      .content-section h3.day-header:first-child {
+        margin-top: 0; }
+      .content-section h3.day-header::before, .content-section h3.day-header::after {
+        display: none; }
+      .content-section h3.day-header + p {
+        text-align: left;
+        font: 400 20px 'proxima-nova', sans-serif;
+        margin: -25px 0 25px; }
   .section-title {
     font-size: 40px;
     float: none;

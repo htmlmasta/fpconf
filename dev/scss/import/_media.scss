@@ -66,6 +66,7 @@
 			overflow: visible;
 		}
 		.frame {
+			background-position: 110% 2px;
 			.buy-a-ticket {
 				font-size: 18px;
 				width: 50%;
@@ -127,6 +128,23 @@
 			margin: -25px 0 15px;
 			.wrapper {
 				padding: 15px $side-margin-mobile;
+			}
+		}
+		h3.day-header {
+			margin: 25px auto;
+			font: 400 35px 'proxima-nova', sans-serif;
+			text-align: left;
+			&:first-child {
+				margin-top: 0;
+			}
+			&::before,
+			&::after {
+				display: none;
+			}
+			& + p {
+				text-align: left;
+				font: 400 20px 'proxima-nova', sans-serif;
+				margin: -25px 0 25px;
 			}
 		}
 	}

@@ -45,7 +45,7 @@ body {
 	}
 	.logo {
 		width: 35%;
-		height: 60%;
+		height: 47%;
 		text-indent: -999px;
 		position: absolute;
 		left: -1%;
@@ -55,7 +55,7 @@ body {
 		.when {
 			position: absolute;
 			bottom: -.4em;
-			left: 0;
+			left: -.2em;
 			color: #fff;
 			font: italic 260% $font-garamond;
 			text-indent: .4em;
@@ -65,8 +65,9 @@ body {
 	.tip {
 		position: absolute;
 		left: 0;
-		top: 5%;
-		font-size: 24px;
+		top: 52%;
+		font-size: 16px;
+		line-height: 1.4;
 		a {
 			color: #fff;
 			text-decoration: none;
@@ -254,6 +255,38 @@ body {
 			padding: 25px $side-margin;
 		}
 	}
+	h3.day-header {
+		position: relative;
+		max-width: 760px;
+		margin: 45px auto;
+		overflow: hidden;
+		font: 100 70px 'proxima-nova', sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		&:first-child {
+			margin-top: 0;
+		}
+		&::before,
+		&::after {
+			content: '';
+			height: 4px;
+			background: url(../images/dot.svg);
+			background-size: 8px 4px;
+			position: absolute;
+			width: 128px;
+			left: 0;
+			top: 38px;
+		}
+		&::after {
+			left: auto;
+			right: -4px;
+		}
+		& + p {
+			text-align: center;
+			font: 100 30px 'proxima-nova', sans-serif;
+			margin: -45px 0 45px;
+		}
+	}
 	.content {
 		clear: both;
 		.simple-page & {
@@ -413,6 +446,7 @@ body {
 	padding-top: 7px;
 	&-title {
 		font-size: 20px;
+		line-height: 1.4;
 		text-transform: uppercase;
 		text-decoration: none;
 		color: #000;
